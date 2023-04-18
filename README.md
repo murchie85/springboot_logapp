@@ -4,7 +4,7 @@
 
 ## Other Java Tutorials 
 
-- [springboot_logapp](https://github.com/murchie85/springboot_logapp)
+- [javaBasics](https://github.com/murchie85/javaBasics-Again-)
 
 ## Contents  
 
