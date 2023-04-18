@@ -6,7 +6,14 @@
 
 - [springboot_logapp](https://github.com/murchie85/springboot_logapp)
 
+## Contents  
 
+- [Deliverable-1](#Deliverable-1:-Setup-and-create-a-"Hello,-World!"-Spring-Boot-application)  
+- [Deliverable-2](#Deliverable-2:-Design-and-implement-a-basic-log-entry-data-model)  
+- 
+## SUMMARY OF WORK 
+ 
+**NOTE** Anyone else reading this who isn't me, can treat the steps here as the stuff you should try out before looking at the solutions.  
 
 In this project, you will be building a log management application using Java and Spring Boot.   
 The application will be a simple RESTful API that accepts log entries, stores them, and provides basic 
@@ -39,6 +46,23 @@ As your teacher, I recommend you to learn and complete the following tasks for t
 6. Add a "Hello, World!" RESTful API endpoint to the project.
 7. Run the application locally and test the "Hello, World!" endpoint using a tool like Postman or curl.
 8. Once you have completed these tasks, provide the source code for the "Hello, World!" Spring Boot application, and we will move on to the next deliverable.
+
+## Deliverable 2: Design and implement a basic log entry data model
+
+For this deliverable, you will need to create a data model to represent log entries in your application. Each log entry should have a timestamp, a log level (e.g., INFO, WARNING, ERROR), and a message.
+
+As your teacher, I recommend you to learn and complete the following tasks for this deliverable:
+
+1. Learn about Java classes, constructors, and getter/setter methods.
+2. Familiarize yourself with Java Enums to represent the log levels.
+3. Create a LogEntry class that contains the following fields:
+4. A unique identifier (e.g., UUID or long)
+5. A timestamp (e.g., LocalDateTime or Instant)
+6. A log level (using an Enum)
+7. A message (String)
+8. Implement constructors, getters, and setters for the LogEntry class.
+
+Once you have completed these tasks, provide the source code for the LogEntry class, and we will move on to the next deliverable.
 
 
 **SOLUTION**
