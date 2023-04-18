@@ -2,6 +2,11 @@
 
 ![](image.png)
 
+## Other Java Tutorials 
+
+- [springboot_logapp](https://github.com/murchie85/springboot_logapp)
+
+
 
 In this project, you will be building a log management application using Java and Spring Boot.   
 The application will be a simple RESTful API that accepts log entries, stores them, and provides basic 
@@ -69,3 +74,16 @@ Do this in application.properties file
 
 server.port=8090
   
+
+
+
+
+
+# GENERAL JAVA NOTES  
+
+## Constructor 
+
+Must have the same name as the class
+Don't give it a type, its just 
+`public Car(String make, String model, int year){}`
+
