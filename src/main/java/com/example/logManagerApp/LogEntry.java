@@ -1,11 +1,12 @@
 package com.example.logManagerApp;
 import java.util.UUID;
 import java.time.LocalDateTime;
-//import lombok.Getter;
-//import lombok.Setter;
-//
-//@Getter
-//@Setter
+import lombok.Getter;
+import lombok.Setter;
+
+
+@Getter
+@Setter
 public class LogEntry {
     public UUID uuid = UUID.randomUUID();
     public LocalDateTime timestampLocal = LocalDateTime.now();

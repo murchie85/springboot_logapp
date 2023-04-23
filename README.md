@@ -10,7 +10,9 @@
 
 - [Deliverable-1](#Deliverable-1:-Setup-and-create-a-"Hello,-World!"-Spring-Boot-application)  
 - [Deliverable-2](#Deliverable-2:-Design-and-implement-a-basic-log-entry-data-model)  
-- 
+- <a href="#deliverable-3">Link to Deliverable 3</a>
+
+
 ## SUMMARY OF WORK 
  
 **NOTE** Anyone else reading this who isn't me, can treat the steps here as the stuff you should try out before looking at the solutions.  
@@ -47,7 +49,7 @@ As your teacher, I recommend you to learn and complete the following tasks for t
 7. Run the application locally and test the "Hello, World!" endpoint using a tool like Postman or curl.
 8. Once you have completed these tasks, provide the source code for the "Hello, World!" Spring Boot application, and we will move on to the next deliverable.
 
-## Deliverable 2: Design and implement a basic log entry data model
+# Deliverable 2: Design and implement a basic log entry data model
 
 For this deliverable, you will need to create a data model to represent log entries in your application. Each log entry should have a timestamp, a log level (e.g., INFO, WARNING, ERROR), and a message.
 
@@ -63,6 +65,33 @@ As your teacher, I recommend you to learn and complete the following tasks for t
 8. Implement constructors, getters, and setters for the LogEntry class.
 
 Once you have completed these tasks, provide the source code for the LogEntry class, and we will move on to the next deliverable.
+
+
+# Deliverable 3: In-memory storage and RESTful API for log entries
+<h1 id="deliverable-3">Deliverable 3: In-memory storage and RESTful API for log entries</h1>
+
+Create a `LogService` class that will be responsible for managing log entries. In this class, define a `List<LogEntry>` as an in-memory storage for your log entries. Implement the following methods:
+
+- `addLogEntry(LogEntry entry)`: Add a new log entry to the list.
+- `List<LogEntry> getAllLogEntries()`: Return the list of all log entries.
+- `Optional<LogEntry> getLogEntry(UUID id)`: Return a log entry by its UUID, wrapped in an `Optional` object.
+- `boolean deleteLogEntry(UUID id)`: Delete a log entry by its UUID. Return `true` if the log entry was found and deleted, `false` otherwise.
+- `Optional<LogEntry> updateLogEntry(UUID id, LogEntry newEntry)`: Update a log entry by its UUID with the new entry provided. Return the updated log entry wrapped in an `Optional` object if the update was successful, or an empty `Optional` if the log entry was not found.
+
+Annotate the `LogService` class with `@Service` to mark it as a **Spring Service** component.
+
+In your `HelloWorldController`, inject an instance of `LogService` using the `@Autowired` annotation.
+
+Create new **RESTful API** endpoints in your `HelloWorldController` to perform the following operations:
+
+- Add a new log entry (HTTP POST request)
+- Get all log entries (HTTP GET request)
+- Get a log entry by UUID (HTTP GET request)
+- Delete a log entry by UUID (HTTP DELETE request)
+- Update a log entry by UUID (HTTP PUT request)
+
+For each endpoint, use appropriate request methods, paths, and path variables, and return appropriate **HTTP status codes** for the operation's result.
+
 
 
 **SOLUTION**
