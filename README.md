@@ -8,8 +8,8 @@
 
 ## Contents  
 
-- [Deliverable-1](#Deliverable-1:-Setup-and-create-a-"Hello,-World!"-Spring-Boot-application)  
-- [Deliverable-2](#Deliverable-2:-Design-and-implement-a-basic-log-entry-data-model)  
+- <a href="#deliverable-1">Link to Deliverable 1</a>
+- <a href="#deliverable-2">Link to Deliverable 2</a>
 - <a href="#deliverable-3">Link to Deliverable 3</a>
 
 
@@ -36,7 +36,7 @@ The project will be broken down into the following deliverables:
 
 
 
-# Deliverable 1: Setup and create a "Hello, World!" Spring Boot application
+<h1 id="deliverable-1">Deliverable 1: Setup and create a "Hello, World!" Spring Boot application</h1>
 
 As your teacher, I recommend you to learn and complete the following tasks for this deliverable:
 
@@ -49,7 +49,7 @@ As your teacher, I recommend you to learn and complete the following tasks for t
 7. Run the application locally and test the "Hello, World!" endpoint using a tool like Postman or curl.
 8. Once you have completed these tasks, provide the source code for the "Hello, World!" Spring Boot application, and we will move on to the next deliverable.
 
-# Deliverable 2: Design and implement a basic log entry data model
+<h1 id="deliverable-2">Deliverable 2: Design and implement a basic log entry data model</h1>
 
 For this deliverable, you will need to create a data model to represent log entries in your application. Each log entry should have a timestamp, a log level (e.g., INFO, WARNING, ERROR), and a message.
 
@@ -67,7 +67,6 @@ As your teacher, I recommend you to learn and complete the following tasks for t
 Once you have completed these tasks, provide the source code for the LogEntry class, and we will move on to the next deliverable.
 
 
-# Deliverable 3: In-memory storage and RESTful API for log entries
 <h1 id="deliverable-3">Deliverable 3: In-memory storage and RESTful API for log entries</h1>
 
 Create a `LogService` class that will be responsible for managing log entries. In this class, define a `List<LogEntry>` as an in-memory storage for your log entries. Implement the following methods:
